@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+       <div class="heading">
+        <h1>Welcome to the Camera App</h1>
+        <p>Click below to access your camera</p>
+       </div>
+        <div class="btns">
+            <button id="openCameraBtn">Open Camera</button>
+        <button id="takePhotoBtn" class="hidden">Take Photo</button>
+        <canvas id="canvas" class="hidden"></canvas>
+        <button id="switchCameraBtn" class="hidden">Switch Camera</button>
+        </div>
+        <div class="results">
+            <video id="video" autoplay playsinline class="video-container"></video>
+            <img id="photo" src="" alt="Your photo will appear here" class="hidden">
+            <a id="downloadLink" class="hidden">Download Photo</a>
+        </div>
+        
+      </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
